@@ -4,6 +4,11 @@
       "semi": 0,
       "jsx-quotes": ["error", "prefer-single"],
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-      "arrow-body-style": ["error", "always"]
+      "arrow-body-style": ["error", "always"],
+      "jsx-no-bind": [1, {
+        "ignoreRefs": true,
+        "allowArrowFunctions": true,
+        "allowBind": true
+      }]
     }
 }

@@ -11,7 +11,7 @@ const CardSection = ({ children, style }) => {
 };
 
 CardSection.propTypes = {
-  children: React.PropTypes.object,
+  children: React.PropTypes.any,
   style: React.PropTypes.object,         // for additional styling
 };
 

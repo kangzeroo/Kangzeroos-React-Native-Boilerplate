@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Text } from 'react-native'
 import { Provider } from 'react-redux'
 import firebase from 'firebase'
 import Router from './Router'
 import Store from './Store'
+import CameraComponent from './components/camera/CameraComponent'
 
 class App extends Component {
 
@@ -17,20 +17,11 @@ class App extends Component {
   //   };
   //   firebase.initializeApp(config);
   // }
-  //
-  // render() {
-  //   return (
-  //     <Provider store={Store}>
-  //       <Router />
-  //     </Provider>
-  //   )
-  // }
-
-
+  
   render() {
     return (
       <Provider store={Store}>
-        <Text style={styles.welcome}>Welcome to React Native</Text>
+        <Router />
       </Provider>
     )
   }
@@ -39,16 +30,6 @@ class App extends Component {
 
 App.propTypes = {
 
-}
-
-const styles = {
-  welcome: {
-    flex: 1,
-    padding: 50,
-    textAlign: 'center',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
 }
 
 export default App;

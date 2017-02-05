@@ -15,7 +15,7 @@ const Button = ({ onPress, children }) => {
 
 Button.propTypes = {
   onPress: React.PropTypes.func.isRequired,
-  children: React.PropTypes.object
+  children: React.PropTypes.any
 };
 
 const styles = {

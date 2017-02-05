@@ -10,7 +10,7 @@ const Card = ({ children }) => {
 };
 
 Card.propTypes = {
-  children: React.PropTypes.object
+  children: React.PropTypes.any
 };
 
 const styles = {

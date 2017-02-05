@@ -29,7 +29,7 @@ const Confirm = ({ children, visible, onAccept, onDecline }) => {
 }
 
 Confirm.propTypes = {
-  children: React.PropTypes.object,
+  children: React.PropTypes.any,
   visible: React.PropTypes.object,
   onAccept: React.PropTypes.func.isRequired,
   onDecline: React.PropTypes.func.isRequired,
